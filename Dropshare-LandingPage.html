@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">        
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Dropshare http://getdropsha.re" />
+    <meta property="twitter:card" content="photo" />
+    <meta property="twitter:image" content="__PREVIEWURL__" [^] />
+    <meta property="twitter:title" content="__FILENAME__" />
+    <title>__FILENAME__</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <svg class="visuallyhidden" id="download-link" width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="linearGradient">
+                <stop stop-color="#8988FF" offset="0%"></stop>
+                <stop stop-color="#3FF9ED" offset="100%"></stop>
+            </linearGradient>
+        </defs>
+        <path fill="url(#linearGradient)" d="M25,32.4852814 L25,12.0006946 C25,11.4474692 24.5522847,11 24,11 C23.4438648,11 23,11.4480262 23,12.0006946 L23,32.5857864 L17.1230692,26.7088557 C16.7315791,26.3173655 16.1003537,26.3138598 15.7071068,26.7071068 C15.3165825,27.0976311 15.3222717,27.7364852 15.7088557,28.1230692 L22.7764257,35.1906393 C23.0946547,35.5088683 23.5712889,35.5707361 23.9497475,35.3715336 C24.3282061,35.5707361 24.8048402,35.5088683 25.1230692,35.1906393 L32.1906393,28.1230692 C32.5772233,27.7364852 32.5829124,27.0976311 32.1923882,26.7071068 C31.7991412,26.3138598 31.1679159,26.3173655 30.7764257,26.7088557 L25,32.4852814 Z M24,48 C10.745166,48 0,37.254834 0,24 C0,10.745166 10.745166,0 24,0 C37.254834,0 48,10.745166 48,24 C48,37.254834 37.254834,48 24,48 Z M24,46 C36.1502645,46 46,36.1502645 46,24 C46,11.8497355 36.1502645,2 24,2 C11.8497355,2 2,11.8497355 2,24 C2,36.1502645 11.8497355,46 24,46 Z"></path>
+    </svg>
+
+    <div class="mobile-header clearfix">
+        <div class="title">__FILENAME__</div>
+        <div class="info">
+            <table cellspacing="0" cellpadding="0">
+                <tr>
+                    <td class="align-left">Uploaded</td>
+                    <td class="highlight">
+                        <span class="uploaded" title="">__SHAREDATE__</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="align-left">File Size</td>
+                    <td class="highlight">__FILESIZE__</td>
+                </tr>
+            </table>
+        </div>
+    </div>    
+    <div class="container"> 
+        <div class="header clearfix">
+            <div class="title">__FILENAME__</div>
+            <div class="info">
+                <table cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="align-left">Uploaded</td>
+                        <td class="highlight">
+                            <span class="uploaded" title="">__SHAREDATE__</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-left">File Size</td>
+                        <td class="highlight">__FILESIZE__</td>
+                    </tr>
+                </table>
+                <a href="__PATH__"><svg class="icon"><use xlink:href="#download-link" /></svg></a>
+            </div>
+        </div>        
+        __PREVIEW__
+    </div>
+    <div class="mobile-footer clearfix">
+        <a href="__PATH__"><svg class="icon"><use xlink:href="#download-link" /></svg></a>
+    </div> 
+    <script>
+        var date_ago = moment.unix(__UNIXSHAREDATE__).fromNow();
+        var date = moment.unix(__UNIXSHAREDATE__).calendar();
+        var uploaded_fields = document.getElementsByClassName("uploaded");
+        for(var i = 0; i < uploaded_fields.length; i++) {
+           uploaded_fields[i].innerHTML = date_ago;
+           uploaded_fields[i].setAttribute('title', date);
+        }        
+    </script>        
+    </body>
+</html>

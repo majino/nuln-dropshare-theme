@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Marian Mraz -- @marianmraz
+
+# THANKS
+
+    Carlo Eugster, Dropshare Team
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    moment.js
