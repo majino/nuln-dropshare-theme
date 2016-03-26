@@ -44,7 +44,7 @@ body {
     position: absolute;
     border: none;
     background: #272C32;
-    box-shadow: inset 0px -6px 10px 0px rgba(0,0,0,0.15), inset 0px 1px 2px 0px rgba(255,255,255,0.10);
+    box-shadow: inset 0px 1px 2px 0px rgba(255,255,255,0.10);
     border-radius: 6px;
     overflow: hidden;        
     top: 50%;
@@ -158,6 +158,8 @@ iframe {
     .header {
         display: block;
         visibility: visible;       
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.05), inset 0px -6px 10px 0px rgba(0,0,0,0.15);        
     }
 }
 
