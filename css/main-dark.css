@@ -136,8 +136,9 @@ video, iframe {
 }
 iframe {
     height: 80vh;
+    border: none;
+    background: #F1F1F1;
 }
-
 
 /* ==========================================================================
    Media Queries
