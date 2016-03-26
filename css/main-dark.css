@@ -3,7 +3,7 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 html {
-    color: #838791;
+    color: #CECECE;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -33,7 +33,7 @@ video {
 
 body {
     font: 400 16px/26px 'Fira Sans', Helvetica, Helvetica Neue, Arial;
-    background: #F5F5F5;
+    background: #1D2024;
 }
 
 .container {
@@ -42,9 +42,9 @@ body {
     max-width: 80%;
     min-width: 45%;
     position: absolute;
-    background: white;
     border: none;
-    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.05), inset 0px -6px 10px 0px rgba(0,0,0,0.02);
+    background: #272C32;
+    box-shadow: inset 0px -6px 10px 0px rgba(0,0,0,0.15), inset 0px 1px 2px 0px rgba(255,255,255,0.10);
     border-radius: 6px;
     overflow: hidden;        
     top: 50%;
@@ -62,8 +62,8 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: white;
-    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.05), inset 0px -1px 0px 0px #E1E2E6, inset 0px -6px 10px 0px rgba(0,0,0,0.02);
+    background: #272C32;
+    box-shadow: inset 0px -6px 10px 0px rgba(0,0,0,0.15), inset 0px 1px 2px 0px rgba(255,255,255,0.10);
     height: 72px;  
 }
 
@@ -71,8 +71,8 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: white;
-    box-shadow: 0px -2px 4px 0px rgba(0,0,0,0.05), inset 0px 1px 0px 0px #E1E2E6, inset 0px 6px 10px 0px rgba(0,0,0,0.02);
+    background: #272C32;
+    box-shadow: inset 0px -6px 10px 0px rgba(0,0,0,0.15), inset 0px -1px 2px 0px rgba(255,255,255,0.10);
     text-align: center;
     height: 72px;  
 }
@@ -85,6 +85,7 @@ body {
 }
 
 .info {
+    color: #8B9397;
     margin-right: 24px;    
     font-size: 12px;
     float: right;
@@ -106,7 +107,7 @@ td {
     display: inline-block;
     margin-left: 16px;
     margin-top: 8px;
-    fill: url(#lightGradient);
+    fill: url(#darkGradient);
 }
 
 .mobile-header .title, .mobile-header .info {
@@ -120,7 +121,7 @@ td {
 }
 
 .highlight {
-    color: #00AAFF;
+    color: #FA584E;
 }
 
 /* preview types */
@@ -146,10 +147,6 @@ iframe {
     .mobile-footer, .mobile-header {
         display: none;
         visibility: hidden;
-    }
-
-    .container {
-        border: 1px solid #E1E2E6;
     }
 
     .uploaded {
